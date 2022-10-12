@@ -1,45 +1,47 @@
 ### 1. GET /users
-a. Id 
-b. Name 
-c. IsActive 
-d. IsAdult 
-e. Pocket
+1. Id 
+2. Name 
+3. IsActive 
+4. IsAdult 
+5. Pocket
 
 ### 2. GET /users/{id}
-a. Id 
-b. Name 
-c. IsActive 
-d. IsAdult 
-e. Pocket 
-f. Orders 
- i. I 
- ii. ProductName 
- iii. Amount 
- iv. Price
+1. Id 
+2. Name 
+3. IsActive 
+4. IsAdult 
+5. Pocket 
+6. Orders 
+   1. Id 
+   2. ProductName 
+   3. Amount 
+   4. Price
  
  ### 3. GET /drink-menu
-a. Id 
-b. ProductName 
-c. Price 
-d. IsForAdult 
+1. Id 
+2. ProductName 
+3. Price 
+4. IsForAdult 
 
 ### POST /buy
 - validation if user is 18 and older
-a. UserId 
-b. ProductId 
-c. Price
+
+1. UserId 
+2. ProductId 
+3. Price
 
 ### 5. GET /summary
 
-a. /summary/all 
-returns sum of orders per product
-  i. Product 
-  ii. Amount of orders
-  iii. UnitPrice 
-  iv. SummaryPrice
+1. /summary/all
+- returns summary of all orders per product
+  
+   1. Product 
+   2. Amount of orders
+   3. UnitPrice 
+   4. SummaryPrice
 
-b. /summary/user
-Vraci vsechny objednavky daneho uzivatele pro vsechny uzivatele: 
-  i. UserId 
-  ii. ordered product 
-  iii. Price 
+2. /summary/user
+- returns summary of all orders per user
+   1. UserId 
+   2. ordered product 
+   3. Price 
